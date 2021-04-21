@@ -1,0 +1,119 @@
+Xft.dpi: 96
+Xcursor.size:22
+Xcursor.theme: DMZ-Black
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+
+
+!URXVT
+!
+!
+!
+URxvt.font: xft:monospace:size=16
+URxvt.background: [80]#000000
+URxvt.depth: 32
+!URxvt.depth: 24
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.iso14755: false
+
+URxvt.urlButton: 1
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+
+URxvt.loginShell: true
+URxvt.iconName: 'asdf'
+URxvt.shading: 10
+
+!TomorrowNight
+#define t_background        [75]#1d1f21
+#define t_current_line      #282a2e
+#define t_selection      	#373b41
+#define t_foreground      	#c5c8c6
+#define t_comment	     	#969896
+#define t_red		     	#cc6666
+#define t_orange	     	#de935f
+#define t_yellow        	#f0c674
+#define t_green	        	#b5bd68
+#define t_aqua	        	#8abeb7
+#define t_blue	        	#81a2be
+#define t_purple        	#b294bb
+
+
+*.foreground:   t_foreground
+*.background:   t_background
+*.cursorColor:  #aeafad
+
+! Black / Grey
+*.color0:       #000000
+*.color8:       #666666
+
+! Red / Bright Red
+*.color1:       t_red
+*.color9:       #FF3334
+
+! Green + Bright Green
+*.color2:       t_green
+!*.color10:      #9ec400
+*.color10: 	#b19cd9
+
+! Yellow (Orange) + Bright Yellow (Yellow)
+*.color3:       t_orange
+*.color11:      t_yellow
+
+! Blue + Bright Blue
+*.color4:       t_blue
+*.color12:      t_blue
+
+! Magenta (Purple) + Bright Magenta
+*.color5:       t_purple
+*.color13:      #b777e0
+
+! Cyan (Aqua) + Bright Cyan
+*.color6:       t_aqua
+*.color14:      #54ced6
+
+! Light Grey (Selection) + White (Current Line)
+*.color7:       t_selection
+*.color15:      t_current_line
+
+URxvt*borderColor:    t_background
+URxvt*externalBorder: 0
+URxvt*internalBorder: 2
+
+!Rofi
+!
+!
+!
+!rofi.color-window: #AA000000, #AA000000, #999999
+!rofi.color-normal: #AA000000, #ffffff, #000000, #999999, #ffffff
+!rofi.color-active: #AA000000, #ffffff, #000000, #999999, #ffffff
+!rofi.color-urgent: #AA000000, #ffffff, #000000, #999999, #ffffff
+
+rofi.show-icons:            false
+rofi.modi:                  drun,run,window,ssh
+rofi.lines:                 7
+rofi.line-padding:          10
+rofi.matching:              fuzzy
+rofi.bw:                    0
+rofi.padding:               0
+rofi.opacity:				50
+rofi.separator-style:       none
+rofi.hide-scrollbar:        true
+rofi.line-margin:           0
+rofi.font:                  Roboto 12
+rofi.theme: /usr/share/rofi/themes/custom-nord.rasi
